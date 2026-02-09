@@ -1,0 +1,99 @@
+/* Contenedor principal */
+.hero {
+  position: relative;
+  width: 100vw;             /* ocupa todo el ancho */
+  height: 100vh;           /* ocupa toda la pantalla */
+  display: flex;            /* activa flexbox */
+  flex-direction: column;   /* columna vertical */
+  justify-content: center;  /* centra verticalmente */
+  align-items: center;      /* centra horizontalmente */
+  background-size: cover;
+  background-position: center;
+}
+
+/* Overlay oscuro */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+/* Grano / noise */
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: var(--noise);
+  opacity: 0.08;           /* ajusta entre 0.05 y 0.12 según te guste */
+  pointer-events: none;
+  z-index: 3;
+}
+
+/* Contenido centrado */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;       /* centra textos */
+}
+
+/* Logo */
+.hero-logo {
+  width: min(70vw, 520px);  /* escala responsiva */
+  max-width: 100%;
+  margin-bottom: 32px;
+  filter: brightness(1.1);
+  animation: fadeUp 1s ease-out forwards;
+}
+
+/* Descripción / estilo pequeño */
+.hero-content p {
+  opacity: 0.7;
+  letter-spacing: 0.2em;
+  margin-bottom: 24px;
+  animation: fadeUp 1s ease-out forwards;
+  animation-delay: 0.3s;
+  opacity: 0; /* animación inicia invisible */
+}
+
+/* CTA / botón escuchar */
+.cta {
+  border: 1px solid #f2f2f2;
+  padding: 12px 32px;
+  text-decoration: none;
+  color: #f2f2f2;
+  letter-spacing: 0.15em;
+  font-size: 0.8rem;
+  display: inline-block;
+  animation: fadeUp 1s ease-out forwards;
+  animation-delay: 0.6s;
+  opacity: 0; /* animación inicia invisible */
+  transition: all 0.3s ease;
+}
+
+.cta:hover {
+  background: #f2f2f2;
+  color: #0b0b0b;
+  transform: translateY(-2px);
+}
+
+/* Animación fade-up */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive ajustes menores */
+@media (max-width: 768px) {
+  .hero-logo {
+    width: 80vw;
+  }
+}
+
+

@@ -1,0 +1,45 @@
+.bio {
+      position: relative;
+  width: 100vw; 
+  display: flex;
+  flex-wrap: wrap;          /* se adapta en móvil */
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  background: #0b0b0b;
+  color: #f2f2f2;
+    padding-top: 80px; /* igual a la altura del Header fijo */
+
+}
+
+.bio-text {
+  flex: 1 1 400px;
+  max-width: 600px;
+  margin: 20px;
+}
+
+.bio-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  letter-spacing: 0.15em;
+}
+
+.bio-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.bio-image {
+  flex: 1 1 400px;
+  max-width: 600px;
+  margin: 20px;
+}
+
+.bio-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 4px; /* opcional, da un toque más moderno */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}

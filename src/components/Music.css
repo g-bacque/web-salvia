@@ -1,0 +1,52 @@
+.music {
+      position: relative;
+  width: 100vw; 
+  padding: 80px 20px;
+  background: #0b0b0b;
+  color: #f2f2f2;
+  text-align: center;
+}
+
+.music h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  letter-spacing: 0.15em;
+}
+
+.music p {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  opacity: 0.9;
+}
+
+.music-tracks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px; /* espacio entre iframes */
+}
+
+.music-tracks iframe {
+  border-radius: 4px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  filter: grayscale(0.2);
+}
+
+.music-tracks iframe:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+
+}
+
+
+@media (max-width: 768px) {
+  .music-tracks {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .music-tracks iframe {
+    width: 90%;
+    height: 380px;
+  }
+}
