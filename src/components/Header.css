@@ -46,3 +46,18 @@
   }
 }
 
+@media (max-width: 768px) {
+  .header {
+    padding: 15px 20px; /* menos padding lateral */
+    flex-direction: column; /* opcional: logo arriba, nav abajo */
+    align-items: center;
+  }
+
+  .nav {
+    display: flex;
+    flex-wrap: wrap; /* permite que los links bajen si hace falta */
+    justify-content: center;
+    gap: 1rem; /* menos espacio entre links en móvil */
+    margin-top: 10px; /* separación con el logo */
+  }
+}
