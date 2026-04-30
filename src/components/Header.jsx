@@ -1,47 +1,36 @@
 import "./Header.css";
 
 export default function Header({ activePage, onNavClick }) {
-    const handleHomeClick = (e) => {
+  const handleNavClick = (e, page) => {
     e.preventDefault();
 
-    // Volvemos al modo landing (todas las secciones)
-    setActiveSection("home");
+    onNavClick(page);
 
-    // Scroll suave arriba
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
+    if (page === "home") {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
   };
-    return (
+
+  return (
     <header className="header">
       <div className="logo">SALVIA</div>
 
       <nav className="nav">
-<a
-  href="#home"
-  className={activePage === "home" ? "active" : ""}
-  onClick={(e) => {
-    e.preventDefault();
-    onNavClick("home");
-
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  }}
->
-  Home
-</a>
-
+        <a
+          href="#home"
+          className={activePage === "home" ? "active" : ""}
+          onClick={(e) => handleNavClick(e, "home")}
+        >
+          Home
+        </a>
 
         <a
           href="#bio"
           className={activePage === "bio" ? "active" : ""}
-          onClick={(e) => {
-            e.preventDefault();
-            onNavClick("bio");
-          }}
+          onClick={(e) => handleNavClick(e, "bio")}
         >
           Bio
         </a>
@@ -49,27 +38,26 @@ export default function Header({ activePage, onNavClick }) {
         <a
           href="#music"
           className={activePage === "music" ? "active" : ""}
-          onClick={(e) => {
-            e.preventDefault();
-            onNavClick("music");
-          }}
+          onClick={(e) => handleNavClick(e, "music")}
         >
           Música
         </a>
 
         <a
-          href="#videos"
-          className={activePage === "videos" ? "active" : ""}
-          onClick={(e) => {
-            e.preventDefault();
-            onNavClick("videos");
-          }}
+          href="#shows"
+          className={activePage === "shows" ? "active" : ""}
+          onClick={(e) => handleNavClick(e, "shows")}
         >
-          Videos
+          Shows
         </a>
 
-        <a href="#shows">Shows</a>
-        <a href="#contact">Contacto</a>
+        <a
+          href="#contact"
+          className={activePage === "contact" ? "active" : ""}
+          onClick={(e) => handleNavClick(e, "contact")}
+        >
+          Contacto
+        </a>
       </nav>
     </header>
   );

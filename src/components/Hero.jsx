@@ -1,32 +1,22 @@
 import "./Hero.css";
-import noise from "../assets/images/noise.png";
-import logo from "../assets/images/salvia-logo.png";
+import heroBand from "../assets/images/band-pink.jpg";
+import logo from "../assets/images/salvia-logo-2.png";
 
 export default function Hero() {
   return (
-    <section
-      className="hero"
-      style={{ "--noise": `url(${noise})` }}
-    >
-      <div className="overlay" />
+    <section className="hero">
+      <img src={heroBand} alt="Salvia band" className="hero-image" />
+
+      <div className="hero-shade" />
 
       <div className="hero-content">
-        <img
-          src={logo}
-          alt="SALVIA"
-          className="hero-logo"
-        />
-
-        <p>Rock Pop</p>
-
-        <a
-          className="cta"
-          href="https://open.spotify.com/intl-es/artist/5lXjjAsrzJSSIjxmVdMzug?si=kk-yr6xMTtWTQ8e98XObBg"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Escuchar
-        </a>
+        <p className="hero-kicker">Rock nacional desde Barcelona</p>
+        <h1 className="hero-title">
+        <img src={logo} alt="Salvia" />
+        </h1>
+        <p className="hero-phrase">
+          Canciones que llegan tarde pero se quedan.
+        </p>
       </div>
     </section>
   );

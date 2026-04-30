@@ -3,8 +3,8 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Bio from "./components/Bio";
 import Music from "./components/Music";
-import Videos from "./components/Videos";
 import Footer from "./components/Footer";
+import Shows from "./components/Shows";
 import "./styles/global.css";
 
 function App() {
@@ -32,7 +32,8 @@ function App() {
           {activePage === "home" && <Hero />}
           {activePage === "bio" && <Bio />}
           {activePage === "music" && <Music />}
-          {activePage === "videos" && <Videos />}
+          {activePage === "shows" && <Shows />}
+      
         </>
       ) : (
         // modo landing completo: todas las secciones visibles
@@ -40,7 +41,7 @@ function App() {
           <Hero />
           <Bio />
           <Music />
-          <Videos />
+          <Shows />
         </>
       )}
         <Footer />

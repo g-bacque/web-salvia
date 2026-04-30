@@ -1,20 +1,32 @@
 import "./Bio.css";
-import bioPhoto from "../assets/images/bio-photo.png";
+import bandSitting from "../assets/images/band-sitting-transparent-2.png";
 
 export default function Bio() {
   return (
     <section className="bio" id="bio">
-      <div className="bio-text">
-        <h2>Quiénes somos</h2>
-        <p>
-          SALVIA es una banda de Rock Pop con una energía que combina lo crudo y lo
-          melódico. Nuestra música busca conectar de manera directa con el público,
-          siempre manteniendo autenticidad y actitud en cada canción.
-        </p>
+      <div className="bio-content">
+        <p className="bio-kicker">Salvia</p>
+
+        <h2>Canciones para lo que no siempre se dice.</h2>
+
+        <div className="bio-text">
+          <p>
+            Salvia nace de canciones que no se escriben rápido. De darle vueltas
+            a lo que pasa cuando nadie mira.
+          </p>
+
+          <p>
+            No buscamos sonar fuerte. Buscamos sonar cerca.
+          </p>
+        </div>
       </div>
 
-      <div className="bio-image">
-        <img src={bioPhoto} alt="SALVIA banda" />
+      <div className="bio-image-wrap">
+        <img
+          src={bandSitting}
+          alt="Salvia sentados"
+          className="bio-image"
+        />
       </div>
     </section>
   );
