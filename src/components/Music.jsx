@@ -1,5 +1,6 @@
 import "./Music.css";
 import bandLadder from "../assets/images/salvia-ep-3.png";
+import livePoster from "../assets/images/live-poster.png";
 
 export default function Music() {
   const tracks = [
@@ -41,7 +42,8 @@ export default function Music() {
             </p>
           </div>
 
-          <div className="music-layout">
+          <div className="album-layout">
+  <div className="music-layout">
             <div className="track-list">
               {tracks.map((track, index) => (
                 <a
@@ -61,10 +63,14 @@ export default function Music() {
                 </a>
               ))}
             </div>
-
-            <div className="album-cover">
+                        <div className="album-cover">
+              <p className="album-label">Demo / 2026</p>
               <img src={bandLadder} alt="Salvia tapa de disco" />
             </div>
+            </div>
+
+
+
           </div>
         </div>
 
@@ -78,12 +84,19 @@ export default function Music() {
           </div>
 
           <div className="video-wrap">
-            <iframe
-              title="Salvia en vivo"
-              src="https://www.youtube.com/embed/DyaBh3LzQWc"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-            ></iframe>
+              <a
+                href="https://www.youtube.com/watch?v=DyaBh3LzQWc"
+                target="_blank"
+                rel="noreferrer"
+                className="video-poster"
+                aria-label="Ver video de Salvia en YouTube"
+              >
+                <img src={livePoster} alt="Salvia en vivo" />
+
+                <span className="youtube-icon">
+                  ▶
+                </span>
+              </a>
           </div>
         </div>
       </div>
