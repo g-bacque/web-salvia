@@ -1,5 +1,5 @@
 import "./Music.css";
-import bandLadder from "../assets/images/salvia-ep-3.png";
+import bandLadder from "../assets/images/salvia-cover.png";
 import livePoster from "../assets/images/live-poster.png";
 
 export default function Music() {
