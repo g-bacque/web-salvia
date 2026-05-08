@@ -1,6 +1,6 @@
 import "./Hero.css";
 import heroBand from "../assets/images/band-pink.jpg";
-import logo from "../assets/images/salvia-logo-2.png";
+import logo from "../assets/images/salvia-logo-3.png";
 
 export default function Hero() {
   return (
