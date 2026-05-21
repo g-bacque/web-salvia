@@ -232,9 +232,16 @@
 
   .album-cover {
     order: -1;
-    max-width: 100%;
-    justify-self: stretch;
+
+    max-width: 240px;
+    width: 100%;
+
+    justify-self: center;
   }
+
+  .album-cover img {
+  border: 1px solid rgba(246, 234, 220, 0.18);
+}
 }
 @media (max-width: 768px) {
   .music {
@@ -244,6 +251,8 @@
   .music-block + .music-block {
     margin-top: 90px;
   }
+
+  
 
   .track-item {
     grid-template-columns: 44px 1fr;

@@ -1,6 +1,6 @@
 import "./Hero.css";
 import heroBand from "../assets/images/band-pink.jpg";
-import logo from "../assets/images/salvia-logo-3.png";
+import logo from "../assets/images/salvia-logo-4.png";
 
 export default function Hero() {
   return (
@@ -10,13 +10,14 @@ export default function Hero() {
       <div className="hero-shade" />
 
       <div className="hero-content">
-        <p className="hero-kicker">Rock nacional desde Barcelona</p>
+        {//  <p className="hero-kicker">Rock nacional argentino con espíritu pop</p> 
+        }
         <h1 className="hero-title">
         <img src={logo} alt="Salvia" />
         </h1>
-        <p className="hero-phrase">
-          Canciones que llegan tarde pero se quedan.
-        </p>
+        {//         <p className="hero-phrase">Canciones nacidas entre Buenos Aires y Barcelona.</p>        
+        }
+
       </div>
     </section>
   );

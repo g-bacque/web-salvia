@@ -38,7 +38,7 @@ export default function Music() {
             <p className="music-kicker">Música</p>
             <h2>Escuchar</h2>
             <p className="music-subtitle">
-              Canciones para quedarse un rato más.
+              Primer EP publicado en 2026.
             </p>
           </div>
 
@@ -77,9 +77,9 @@ export default function Music() {
         <div className="music-block music-live">
           <div className="music-heading">
             <p className="music-kicker">En vivo</p>
-            <h2>Ver y escuchar</h2>
+            <h2>En Vivo</h2>
             <p className="music-subtitle">
-              Una canción en directo, con el ruido y el aire de estar ahí.
+              Un registro en vivo de nuestra etapa actual.
             </p>
           </div>
 

@@ -7,17 +7,18 @@ export default function Bio() {
       <div className="bio-content">
         <p className="bio-kicker">Salvia</p>
 
-        <h2>Canciones para lo que no siempre se dice.</h2>
+        <h2>Rock Pop argentino mediterráneo.</h2>
 
         <div className="bio-text">
           <p>
-            Salvia nace de canciones que no se escriben rápido. De darle vueltas
-            a lo que pasa cuando nadie mira.
+          Salvia es una banda de pop-rock nacida en Barcelona en 2022.
+
           </p>
 
           <p>
-            No buscamos sonar fuerte. Buscamos sonar cerca.
-          </p>
+          Surgió del encuentro entre un grupo de inmigrantes que encontraron en la ciudad una fuente de inspiración y un nuevo hogar.          </p>
+          <p>
+          Sus canciones originales combinan las raíces del rock nacional argentino con espíritu pop y pinceladas de soul y funk.          </p>          
         </div>
       </div>
 
