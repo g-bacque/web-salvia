@@ -3,19 +3,19 @@ import "./Shows.css";
 export default function Shows() {
   const shows = [
     {
-      date: "12 Jun",
-      city: "Barcelona",
-      venue: "Sala Upload",
+      date: "fecha",
+      city: "Ciudad",
+      venue: "Sala",
     },
     {
-      date: "28 Jun",
-      city: "Valencia",
-      venue: "Loco Club",
+      date: "fecha",
+      city: "Ciudad",
+      venue: "Sala",
     },
     {
-      date: "10 Jul",
-      city: "Madrid",
-      venue: "El Sol",
+      date: "fecha",
+      city: "Ciudad",
+      venue: "Sala",
     },
   ];
 

@@ -1,32 +1,32 @@
 import "./Music.css";
-import bandLadder from "../assets/images/salvia-cover.png";
+import bandLadder from "../assets/images/no-me-parece-cover-v7 copia.png";
 import livePoster from "../assets/images/live-poster.png";
 
 export default function Music() {
   const tracks = [
     {
       title: "Puedo Ser Todo",
-      url: "https://soundcloud.com/gaspar-bacque/puedo-ser-todo-m2-2/s-4D96s5dKpSo?si=795816a8236044ae95b4759624420eed&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+      url: "https://untitled.stream/library/track/ef5bbL12kBdDkFim0HjOW",
     },
     {
       title: "Siempre te Extraño",
-      url: "https://soundcloud.com/gaspar-bacque/siempre-te-extrano-m3-1/s-gcrKOO12Xx6?si=0c40b461161640b2994ecceb71877607&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+      url: "https://untitled.stream/library/track/9CWVSwLSCH2RgkkGqPb0Q",
     },
     {
       title: "De eso se Trata Estar con Vos",
-      url: "https://soundcloud.com/gaspar-bacque/de-eso-se-trata-estar-con-vos-m2-1-5/s-mVMhmfwPsrT?si=f45eaabb398941f7b13184df605b9fdd&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+      url: "https://untitled.stream/library/track/TUmnhX1ObAYfFqhjYzcZA",
     },
     {
       title: "En Todo lo que Hay",
-      url: "https://soundcloud.com/gaspar-bacque/en-todo-lo-que-hay-m2-4/s-j4otOXDwdTH?si=0e3371d425c44c999e6194c5e4fd6222&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+      url: "https://untitled.stream/library/track/u79SwrtdbIelLooLIYmIw",
     },
     {
       title: "Canción para Rosario",
-      url: "https://soundcloud.com/gaspar-bacque/cancion-para-rosario_m3-6/s-XQ68tTD9JTq?si=afda65caecb3454fbf55a5dc7b37e977&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+      url: "https://untitled.stream/library/track/Pb2O0w6uVtC70QsCpeNFN",
     },
     {
       title: "No me Parece",
-      url: "https://soundcloud.com/gaspar-bacque/no-me-parece-m3-3/s-89TkS8eIxs9?si=35d4e0bb6464476f9a132a4f0d7120be&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+      url: "https://untitled.stream/library/track/Pk1RRnag515qq2oONLTAP",
     },            
   ];
 
